@@ -1,0 +1,70 @@
+
+@import '../core/color';
+
+// .discounts {}
+
+.discounts__intro {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 5px;
+  color: $textColor;
+  font-weight: 400;
+}
+
+.discounts__catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discounts__item {
+  width: 298px;
+  background-color: $baseGray;
+  cursor: pointer;
+
+  &:hover {
+    .discounts__media img {
+      transform: scale(1.1);
+    }
+
+    .discounts__name {
+      & span {
+        &:first-child {
+          opacity: 0;
+        }
+
+        &:last-child {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.discounts__media {
+  overflow: hidden;
+
+  & img {
+    transition: .6s transform;
+  }
+}
+
+.discounts__name {
+  position: relative;
+    height: 56px;
+    background-color: #303132;
+    text-align: center;
+
+  & span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    text-transform: uppercase;
+    color: #fff;
+    transition: .3s opacity;
+
+    &:last-child {
+      opacity: 0;
+    }
+  }
+}

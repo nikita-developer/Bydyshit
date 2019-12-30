@@ -1,0 +1,13 @@
+
+@import '../core/color';
+
+.delivery {
+  background-color: $baseGray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $textColor;
+  font-size: 13px;
+}

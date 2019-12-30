@@ -1,0 +1,22 @@
+
+.networks {
+  display: flex;
+  max-width: 170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.networks__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.networks__link {
+  width: 35px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

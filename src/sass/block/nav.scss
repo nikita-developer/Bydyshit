@@ -1,0 +1,24 @@
+
+.nav {
+  display: flex;
+}
+
+.nav__item {
+  & + & {
+    margin-left: 10px;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 10px;
+    color: #D3D3D3;
+    font-weight: 400;
+    font-size: 15px;
+    transition: .3s color;
+
+    &:hover {
+      color: #bddbe0;
+      text-decoration: none;
+    }
+  }
+}
